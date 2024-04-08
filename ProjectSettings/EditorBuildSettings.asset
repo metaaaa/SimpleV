@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/__WorkSpace/SimpleV/Scenes/SimpleV.unity
+    guid: 553f38db6f455914bafd9d8b3943f24a
   m_configObjects: {}
