@@ -3,8 +3,10 @@ VRM1.0モデル用の簡易的なVTuberシステムです。主にMediaPipeUnity
 
 動作確認をするには有料AssetのFinalIKが必要です。
 
+https://github.com/metaaaa/SimpleV/assets/56059182/ff8fb197-6a51-4d0f-b5b5-9f294e2b975a
 
 ## Env
+
 ```
 Unity2022.3.6f1
 MediaPipeUnityPlugin v0.14.1
