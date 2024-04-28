@@ -45,9 +45,9 @@ namespace SimpleV
             var faceHorizontal = (GetFaceLandmarkPosition(LandmarkDefinition.FaceBottom) -
                                   GetFaceLandmarkPosition(LandmarkDefinition.FaceTop)).normalized;
 
-            var lookRollRad = Mathf.Acos(Vector2.Dot(Vector2.right, faceHorizontal)) - 90f * Mathf.Deg2Rad;
+            var lookRollRad = Mathf.Atan2(faceHorizontal.y, faceHorizontal.x) - 90f * Mathf.Deg2Rad;
             var lookRoll = Quaternion.Euler(0, 0, lookRollRad * Mathf.Rad2Deg);
-            var lookVec = Vector3.Cross(faceVertical.normalized, faceHorizontal.normalized);
+            var lookVec = Vector3.Cross(faceVertical, faceHorizontal);
             var lookQua = lookRoll * Quaternion.LookRotation(lookVec);
             return lookQua;
         }
